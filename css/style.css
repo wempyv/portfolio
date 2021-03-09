@@ -161,6 +161,9 @@ body {
     .section-about-skill .avatar {
         display: none;
     }
+    h2,h4{
+        text-align: center;
+    }
 }
 
 @media(min-width:768px) {
