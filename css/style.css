@@ -174,7 +174,7 @@ body {
 
 .section-blog {
     align-items: center;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .section-blog h2 {
@@ -220,6 +220,35 @@ body {
     max-width: 277px;
     max-height: 65px;
     font-size: 27px;
+}
+
+.section-footer {
+    background-color: #190032;
+    min-height: 40vh;
+    display: flex;
+    color: #E8CFCF;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-footer .row p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.section-footer .row span {
+    font-size: 20px;
+}
+
+.section-footer .row a:first-child {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0 15px;
+}
+
+.section-footer .row a:last-child {
+    font-size: 50px;
+    font-weight: 600;
 }
 
 @media(max-width:767px) {
