@@ -11,21 +11,21 @@ body {
     flex-direction: column;
 }
 
-.btn{
+.btn {
     height: 48px;
     width: 174px;
     border-radius: 12px;
     font-size: 22px;
 }
 
-.button-hire-me{
+.button-hire-me {
     background-color: #6C63FF;
 }
 
-.button-more-project{
+.button-more-project {
     display: flex;
-  justify-content: center;
-  margin: 2em auto;
+    justify-content: center;
+    margin: 2em auto;
     background-color: #23006D;
 }
 
@@ -132,7 +132,7 @@ body {
     color: #8D8989;
 }
 
-.section-project{
+.section-project {
     background: #F8F8F8;
     min-height: 100vh;
     align-items: center;
@@ -156,12 +156,12 @@ body {
     font-weight: 400;
 }
 
-.section-project img{
+.section-project img {
     width: 100%;
     border-radius: 12px;
 }
 
-.section-project h5{
+.section-project h5 {
     font-size: 30px;
     color: #1C1C1C;
     font-weight: 600;
@@ -172,6 +172,56 @@ body {
     color: #6C63FF;
 }
 
+.section-blog {
+    align-items: center;
+    min-height: 100vh;
+}
+
+.section-blog h2 {
+    color: #1C1C1C;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.section-blog h4 {
+    color: #8D8989;
+    font-weight: 600;
+    font-size: 25px;
+    align-items: center;
+}
+
+.section-blog .section-box {
+    height: 309px;
+    width: 309px;
+    box-shadow: 2px 6px 22px rgba(0, 0, 0, 0.25);
+    background-size: cover;
+    border-radius: 12px;
+    margin: 0 auto;
+    color: white;
+    text-overflow: ellipsis !important;
+}
+
+.box-1 {
+    background: url(../img/bg-blog-1.png)no-repeat;
+}
+
+.box-2 {
+    background: url(../img/bg-blog-2.png)no-repeat;
+}
+
+.box-3 {
+    background: url(../img/bg-blog-3.png)no-repeat;
+}
+
+.section-blog .section-box p {
+    position: absolute;
+    bottom: 0;
+    margin-left: .4em;
+    max-width: 277px;
+    max-height: 65px;
+    font-size: 27px;
+}
+
 @media(max-width:767px) {
     .column-reverse {
         flex-direction: column-reverse;
@@ -179,7 +229,7 @@ body {
     .section-about-skill .avatar {
         display: none;
     }
-    h2,h4{
+    h2, h4 {
         text-align: center;
     }
 }
