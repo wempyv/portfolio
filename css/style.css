@@ -11,6 +11,24 @@ body {
     flex-direction: column;
 }
 
+.btn{
+    height: 48px;
+    width: 174px;
+    border-radius: 12px;
+    font-size: 22px;
+}
+
+.button-hire-me{
+    background-color: #6C63FF;
+}
+
+.button-more-project{
+    display: flex;
+  justify-content: center;
+  margin: 2em auto;
+    background-color: #23006D;
+}
+
 .section-header {
     background-color: #190032;
     min-height: 100vh;
