@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Assistant', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-header {
+    background-color: #190032;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.nav-link {
+    color: #E8CFCF !important;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.jumbotron {
+    color: #E8CFCF !important;
+    background: none;
+    text-transform: uppercase;
+}
+
+.jumbotron .typography {
+    font-size: 35px;
+    font-weight: 700;
+    max-width: 12em;
+    width: 100%;
+}
+
+.img-illustration {
+    min-width: 13em;
+    width: 100%;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.bounce-1 {
+    animation-name: bounce-1;
+    animation-timing-function: cubic-bezier(0, 0, 0, 0);
+}
+
+@keyframes bounce-1 {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: rotate(-deg);
+    }
+    50% {
+        transform: translateY(6px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.section-about-skill {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.section-about-skill h2 {
+    color: #1C1C1C;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.section-about-skill h4 {
+    color: #E8CFCF;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.section-about-skill p {
+    font-size: 27px;
+    color: #666666;
+    font-weight: 600;
+}
+
+.section-about-skill img {
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    padding: 2em;
+    margin: 1em auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    box-shadow: 2px 6px 22px rgba(0, 0, 0, 0.25);
+}
+
+.box span {
+    font-size: 25px;
+    font-weight: 700;
+    color: #666666;
+}
+
+@media(max-width:767px) {
+    .column-reverse {
+        flex-direction: column-reverse;
+    }
+    .section-about-skill .avatar {
+        display: none;
+    }
+}
+
+@media(min-width:768px) {
+    .jumbotron .typography {
+        margin-top: 2.2em;
+    }
+}
+
+@media(max-width:350px) {
+    .jumbotron .typography {
+        font-size: 20px;
+    }
+}
