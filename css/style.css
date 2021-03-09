@@ -114,6 +114,46 @@ body {
     color: #8D8989;
 }
 
+.section-project{
+    background: #F9F9F9;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.section-project h2 {
+    color: #1C1C1C;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.section-project h4 {
+    color: #8D8989;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.section-project p {
+    font-size: 25px;
+    color: #A7A7A7;
+    font-weight: 400;
+}
+
+.section-project img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.section-project h5{
+    font-size: 30px;
+    color: #1C1C1C;
+    font-weight: 600;
+}
+
+.section-project a {
+    font-size: 25px;
+    color: #6C63FF;
+}
+
 @media(max-width:767px) {
     .column-reverse {
         flex-direction: column-reverse;
