@@ -19,6 +19,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Wempy Virgana</title>
   </head>
@@ -51,7 +52,7 @@
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
             <div class="row column-reverse">
-              <div class="col col-md-6 col-sm-12 mt-5">
+              <div class="col col-md-6 col-sm-12 mt-5" data-aos="fade-up">
                 <h1 class="typography">
                   Hi im Wempy Virgana<br />UI/UX Designer & Front end Developer
                 </h1>
@@ -59,7 +60,10 @@
                   Hire me
                 </button>
               </div>
-              <div class="col col-md-6 col-sm-12 d-flex align-self-center">
+              <div
+                class="col col-md-6 col-sm-12 d-flex align-self-center"
+                data-aos="fade-down"
+              >
                 <img
                   src="img/img-illustration.svg"
                   class="img-illustration bounce-1"
@@ -75,7 +79,7 @@
       <div class="container">
         <div class="section-about">
           <div class="row ">
-            <div class="col-md-8">
+            <div class="col-md-8" data-aos="fade-up">
               <h2>About</h2>
               <h4>Description about me</h4>
               <p class="mt-3">
@@ -84,36 +88,38 @@
                 multiple Frameworks like Bootstrap and Vue js.
               </p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-down">
               <img src="img/avatar.svg" alt="" class="avatar" />
             </div>
           </div>
         </div>
 
         <div class="section-skill mt-5">
-          <h2>Skills</h2>
-          <h4>Skills and technology that i use</h4>
+          <div data-aos="fade-up">
+            <h2>Skills</h2>
+            <h4>Skills and technology that i use</h4>
+          </div>
           <div class="row mt-4">
             <div class="col-sm-6 col-md-3">
-              <div class="box">
+              <div class="box" data-aos="flip-left">
                 <img src="img/ic-bootstrap.svg" />
                 <span>Bootstrap</span>
               </div>
             </div>
             <div class="col-sm-6 col-md-3">
-              <div class="box">
+              <div class="box" data-aos="zoom-in">
                 <img src="img/ic-vue.svg" />
                 <span>Vue</span>
               </div>
             </div>
             <div class="col-sm-6 col-md-3">
-              <div class="box">
+              <div class="box" data-aos="flip-right">
                 <img src="img/ic-nuxt.svg" />
                 <span>Nuxt js</span>
               </div>
             </div>
             <div class="col-sm-6 col-md-3">
-              <div class="box">
+              <div class="box" data-aos="zoom-out">
                 <img src="img/ic-firebase.svg" />
                 <span>Firebase</span>
               </div>
@@ -127,11 +133,17 @@
       <div class="container mt-5">
         <div class="row">
           <div class="col-md-7">
-            <h2>Project</h2>
-            <h4>My latest recent project</h4>
-            <img src="img/facebook-clone.jpg" class="mt-3" />
+            <div data-aos="fade-up">
+              <h2>Project</h2>
+              <h4>My latest recent project</h4>
+            </div>
+            <img
+              src="img/facebook-clone.jpg"
+              class="mt-3"
+              data-aos="fade-down"
+            />
           </div>
-          <div class="col-md-4 d-flex flex-column justify-content-center mt-3">
+          <div class="col-md-4 d-flex flex-column justify-content-center mt-3" data-aos="fade-up">
             <h5>Facebook Clone</h5>
             <p>
               Written in vue js and Rest api using Laravel. this is my personal
@@ -142,7 +154,7 @@
         </div>
 
         <div class="row mt-5 column-reverse">
-          <div class="col-md-4 d-flex flex-column justify-content-center mt-3">
+          <div class="col-md-4 d-flex flex-column justify-content-center mt-3" data-aos="fade-down">
             <h5>Instagram Clone</h5>
             <p>
               Written in vue js and Rest api using Laravel. this is my personal
@@ -151,10 +163,10 @@
             <a href="#" class="mt-3">Interactive Demo</a>
           </div>
           <div class="col-md-7">
-            <img src="img/instagram-clone.jpg" class="mt-3" />
+            <img src="img/instagram-clone.jpg" class="mt-3" data-aos="fade-up"/>
           </div>
         </div>
-        <button class="btn btn-primary button-more-project">
+        <button class="btn btn-primary button-more-project" data-aos="fade-down">
           More Project
         </button>
       </div>
@@ -166,17 +178,17 @@
         <h4>My recent latest Blog</h4>
         <div class="row mt-3">
           <div class="col-md-4">
-            <div class="section-box box-1 mt-3">
+            <div class="section-box box-1 mt-3" data-aos="fade-up">
               <p>How to design a website using figma</p>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="section-box box-2 mt-3">
+            <div class="section-box box-2 mt-3" data-aos="fade-down">
               <p>What is the difference between ux designer</p>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="section-box box-3 mt-3">
+            <div class="section-box box-3 mt-3" data-aos="fade-up">
               <p>Redesigning the Facebook user interfe/p></p>
             </div>
           </div>
@@ -208,6 +220,10 @@
       </div>
     </section>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
