@@ -261,6 +261,16 @@ body {
     }
     h2, h4 {
         text-align: center;
+        font-size: 25px !important;
+    }
+    h5 {
+        font-size: 23px !important;
+    }
+    p {
+        font-size: 22px !important;
+    }
+    a {
+        font-size: 20px !important;
     }
 }
 
